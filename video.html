@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- magnific-popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="video.css">
+    <title>Projects</title>
+</head>
+<body> 
+    <!-- navbar --> 
+    <header class="header fixed-top">
+        <a href="#"><img src="logo.png" alt=""></a>
+
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a class="active" href="video.html">Projects</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+
+        <div class="fas fa-bars"></div>
+        
+    </header>
+
+    <!-- video section -->
+    <div class="container">
+        <div class="heading">Our Completed Projects</div>
+
+        <div class="video-container">
+            <div class="video">
+                <video src="3D VIEW/Video/-1305599325.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/-1392186988.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/-1632612250.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/-1713630486.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/-2083464963.mp4" muted></video>
+            </div>
+            
+            <div class="video">
+                <video src="3D VIEW/Video/-307460837.mp4" muted></video>
+            </div>
+            
+            <div class="video">
+                <video src="3D VIEW/Video/-760676739.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/-827623974.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/-981875530.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/1365580719.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/146589619.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/1811596900.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/2122307756.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/60799653.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/61394581.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/641283736.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/224597184.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/227372335.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/-999772474.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/1065052124.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/1158892958.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/-1829935323.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="3D VIEW/Video/2053009433.mp4" muted></video>
+            </div>
+        </div>
+    </div>
+
+
+   
+    
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- magnific popup js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+
+
+    <script>
+        
+        var video = document.querySelectorAll('video')
+
+        video.forEach(play => play.addEventListener('click', () =>{
+            play.classList.toggle('active');
+
+            if(play.paused){
+                play.play();
+            }else {
+                play.pause();
+                play.currentTime = 0;
+            }
+        }));
+   
+
+    </script>
+
+
+
+
+</body>
+</html>

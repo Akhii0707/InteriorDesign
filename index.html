@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- magnific popup css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- bootstrap link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.min.js">   
+     
+    <!-- Font-Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--- jquery file link --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- image slider link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="work.css">  
+    <title>Interior Design</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header fixed-top">
+        <a href="#"><img src="logo.png" alt=""></a>
+
+        <nav>
+            <ul>
+                <li><a class="active" href="Home.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="video.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div class="fas fa-bars"></div>
+        
+    </header>
+
+    <!-- Home Banner Start -->
+    <section id="hero">
+        <h1>We Help You Design <br> Your Dream Home</h1>
+        <p>Our professional and experienced interior designers will <br> create the home of your dreams so you can live in style.</p>
+        <a href=""><button>Learn More</button></a>
+    </section>
+
+    <!-- service img -->
+    <main  id="services">
+        <div class="container reveal">
+            <mi id="rora" class="cover-section">
+                <div class="title-text">
+                    <h1>Our Services</h1>
+                    <p>From interior designing, decorating and <br>creating custom furniture, we provide all <br>kinds of services you could need to create <br>the perfect home.</p>
+                </div>
+                
+                <div class="box-feature">
+                    <img src="img/Service.jpg" alt="" class="cover-image">
+                    <div class="txtr">
+                        <h5>FURNITURE & DECOR</h5>
+                        <h4>We Create Customized <br>Home & Office Furniture</h4>
+                    </div>
+                </div>
+            </mi>
+        </div>
+    </main>  
+
+    <!-- 2 images -->
+    <div class="side reveal">
+        <img class="pic" src="img/Lighting.jpg" alt="">
+        <div class="txt">
+            <h5>LIGHTING</h5>
+            <h4>Brighten Your Rooms <br> With Custom Lighting</h4>
+        </div>
+    </div>
+    <div class="sider reveal">
+        <img class="pics" src="img/Floor-Planning.jpg" alt="">
+        <div class="txte">
+            <h5>FLOOR PLANNING</h5>
+            <h4>Make The Best Use <br> Of Space</h4>
+        </div>
+    </div>
+
+    <!-- work process -->
+    <div class="color">
+        <section>
+            <div class="container reveal">
+                <h2>Our Work Process</h2>
+                <div class="cards">
+                    <div class="text-card">
+                        <img src="1.png" alt="">
+                        <h3>Concept</h3>
+                        <p>First we come up with a concept that reflects themes and style. tempor incididumodo.</p>
+                    </div>
+                    <div class="text-card">
+                        <img src="2.png" alt="">
+                        <h3>Idea</h3>
+                        <p>Next we come up with ideas for colorschemes, palettes and other. tempor incididumodo.</p>
+                    </div>
+                    <div class="text-card">
+                        <img src="3.png" alt="">
+                        <h3>Design</h3>
+                        <p>Our design team takes these ideas and prepares design boards for. tempor incididumodo.</p>
+                    </div>
+                    <div class="text-card">
+                        <img src="4.png" alt="">
+                        <h3>Execution</h3>
+                        <p>Once a design has been selected, our team will work to bring it to life. tempor incididumodo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script type="text/javascript">
+            window.addEventListener('scroll',reveal);
+    
+            function reveal(){
+                var reveals = document.querySelectorAll('.reveal');
+    
+                for(var i = 0; i < reveals.length; i++){
+                    var windowheight = window.innerHeight;
+                    var revealtop = reveals[i].getBoundingClientRect().top;
+                    var revealpoint = 150;
+    
+                    if(revealtop < windowheight - revealpoint){
+                        reveals[i].classList.add('active');
+                    }
+                    else {
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            }
+
+        </script>  
+    </div> 
+
+    <!-- clients img -->
+    <div class="client">
+        <section>
+            <div class="contain reveal">
+                <h2>Our <span>Clients</span></h2>
+                <p>We have worked with renowned names. From hotels, offices and <br> homes, we have worked with clients from all backgrounds.</p>
+                <div class="imgs">
+                    <div class="photo">
+                        <img src="clients/1.png" width="200px" alt="">
+                    </div>
+                    <div class="photo">
+                        <img src="clients/2.png" width="200px" alt="">
+                    </div>
+                    <div class="photo">
+                        <img src="clients/3.png" width="200px" alt="">
+                    </div>
+                    <div class="photo">
+                        <img src="clients/4.png" width="200px" alt="">
+                    </div>
+                </div>
+                <div class="imags">
+                    <div class="photos">
+                        <img src="clients/5.png" width="200px" alt="">
+                    </div>
+                    <div class="photos">
+                        <img src="clients/6.png" width="200px" alt="">
+                    </div>
+                    <div class="photos">
+                        <img src="clients/7.png" width="200px" alt="">
+                    </div>
+                    <div class="photos">
+                        <img src="clients/8.png" width="200px" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- featured Projects -->
+    <div class="feature">
+        <h1 class="reveal">Featured Products</h1>
+        <div class="pro">
+            <div class="light reveal">
+                <img class="features" src="img/f3.jpg" alt="">
+                <h4>Monochrome Office</h4>
+                <h5>Commercial</h5>
+            </div>
+
+            <div class="lightr reveal">
+                <img class="features" src="img/f2.jpg" alt="">
+                <h4>Boho Themed Restaurant</h4>
+                <h5>Restaurant</h5>
+            </div>
+
+            <div class="lighte reveal">
+                <img class="features" src="img/f1.jpg" height="410" alt="">
+                <h4>Vintage Glamour Home</h4>
+                <h5>Home</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hear From Our Clients -->
+    <div class="clients reveal">
+        <h1>Hear From Our Clients</h1>
+        <div class="png reveal">
+            <img src="special/10.png" alt="">
+        </div>
+    </div>
+
+    <!-- Meet our team -->
+    <div class="featuree">
+        <h1 class="reveal">Meet Our Team</h1>
+        <div class="pro">
+            <div class="light reveal">
+                <img class="features" src="special/2.jpg" alt="">
+                <h4 id="evil">Fran Wilson</h4>
+            </div>
+
+            <div class="light reveal">
+                <img class="features" src="special/3.jpg" alt="">
+                <h4 id="evil">Adam Smith</h4>
+            </div>
+
+            <div class="lightr reveal">
+                <img class="features" src="special/4.jpg" alt="">
+                <h4 id="evil">Sarah Glenn</h4>
+            </div>
+
+            <div class="lighte reveal">
+                <img class="features" src="special/5.jpg" alt="">
+                <h4 id="evil">Chris Woakes</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lable Text -->
+    <div class="lable">
+        <section class="able reveal">
+            <h1>We Turn Ideas Into Works Of Art</h1>
+
+            <div class="button">Learn More</div>
+        </section>
+    </div>
+
+    <!-- Latest news -->
+    <div class="featuree">
+        <h1 class="reveal">Latest News</h1>
+        <div class="pro">
+            <div class="light reveal">
+                <img class="features" src="special/10.jpg" alt="">
+                <h4 id="evil">The Ideal Floor Plan Of <br> Yojp Dream Home</h4>
+                <div class="cate">
+                    <h5>on May 20, 2023  Category</h5>
+                </div>
+            </div>
+
+            <div class="light reveal">
+                <img class="features" src="special/11.jpg" alt="">
+                <h4 id="evil">Choosing The Right Theme <br> For Your Busines</h4>
+                <div class="cate">
+                    <h5>on May 20, 2023  Category</h5>
+                </div>
+            </div>
+
+            <div class="light reveal">
+                <img class="features" src="special/12.jpg"   alt="">
+                <h4 id="evil">Choosing Furniture That <br> Compliments Your Home</h4>
+                <div class="cate Category">
+                    <h5>on May 20, 2023  Category</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext  reveal">
+            <h4>sign up for the latest from Interior Design</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form reveal"> 
+            <input type="text" placeholder="Your E-Mail Address">
+            <button class="normal">Submit</button>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <section id="footer">
+
+        <footer class="footer-distributed">
+    
+            <div class="footer-left">
+                <h3>Cara<span> Interior's</span></h3>
+    
+                <p class="footer-links">
+                    <a href="Home.php">Home</a>
+                    |
+                    <a href="about.php">About</a>
+                    |
+                    <a href="contact.php">Contact</a>
+               
+                </p>
+    
+                <p class="footer-company-name">Copyright © 2023 <strong>Cara Interior's</strong> All rights reserved</p>
+            </div>
+    
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Vita</span>
+                        Maharashtra</p>
+                </div>
+    
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+91 74**9**258</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:carainteriors@gmail.com">carainteriors@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    <strong>Cara Interior's </strong> : We make interior spaces functional, safe, and beautiful
+                     for almost every type of building.
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </section>
+
+
+    
+    <!-- javascript file link -->
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
